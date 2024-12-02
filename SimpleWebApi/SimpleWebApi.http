@@ -1,0 +1,16 @@
+@SimpleWebApi_HostAddress = http://localhost:5102
+
+### GET Request
+GET {{SimpleWebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+### POST Request
+POST {{SimpleWebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "date": "2024-12-03",
+  "temperatureF": 70,
+  "summary": "Mild"
+}
